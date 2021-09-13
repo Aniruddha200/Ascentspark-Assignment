@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C3285D5226EA4D210067DACE /* Ascentspark_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D5126EA4D210067DACE /* Ascentspark_AssignmentApp.swift */; };
-		C3285D5426EA4D210067DACE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D5326EA4D210067DACE /* ContentView.swift */; };
+		C3285D5426EA4D210067DACE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D5326EA4D210067DACE /* HomeView.swift */; };
 		C3285D5626EA4D230067DACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3285D5526EA4D230067DACE /* Assets.xcassets */; };
 		C3285D5926EA4D230067DACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3285D5826EA4D230067DACE /* Preview Assets.xcassets */; };
+		C3285D6126EA585C0067DACE /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D6026EA585C0067DACE /* APIModel.swift */; };
+		C3285D6626EC6B480067DACE /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D6526EC6B480067DACE /* APIController.swift */; };
+		C3285D6826ECA5060067DACE /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D6726ECA5060067DACE /* FollowersView.swift */; };
+		C3285D6A26ED91380067DACE /* AssestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D6926ED91380067DACE /* AssestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3285D4E26EA4D210067DACE /* Ascentspark Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ascentspark Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3285D5126EA4D210067DACE /* Ascentspark_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ascentspark_AssignmentApp.swift; sourceTree = "<group>"; };
-		C3285D5326EA4D210067DACE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3285D5326EA4D210067DACE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C3285D5526EA4D230067DACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3285D5826EA4D230067DACE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3285D5A26EA4D230067DACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3285D6026EA585C0067DACE /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		C3285D6526EC6B480067DACE /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		C3285D6726ECA5060067DACE /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
+		C3285D6926ED91380067DACE /* AssestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				C3285D5126EA4D210067DACE /* Ascentspark_AssignmentApp.swift */,
-				C3285D5326EA4D210067DACE /* ContentView.swift */,
+				C3285D6426EC6AFB0067DACE /* ViewModel */,
+				C3285D6326EC6AED0067DACE /* View */,
+				C3285D6226EC6AD40067DACE /* Model */,
 				C3285D5526EA4D230067DACE /* Assets.xcassets */,
 				C3285D5A26EA4D230067DACE /* Info.plist */,
 				C3285D5726EA4D230067DACE /* Preview Content */,
@@ -67,6 +77,32 @@
 				C3285D5826EA4D230067DACE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3285D6226EC6AD40067DACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3285D6026EA585C0067DACE /* APIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3285D6326EC6AED0067DACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3285D5326EA4D210067DACE /* HomeView.swift */,
+				C3285D6726ECA5060067DACE /* FollowersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3285D6426EC6AFB0067DACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3285D6526EC6B480067DACE /* APIController.swift */,
+				C3285D6926ED91380067DACE /* AssestController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3285D5426EA4D210067DACE /* ContentView.swift in Sources */,
+				C3285D6626EC6B480067DACE /* APIController.swift in Sources */,
+				C3285D5426EA4D210067DACE /* HomeView.swift in Sources */,
+				C3285D6126EA585C0067DACE /* APIModel.swift in Sources */,
 				C3285D5226EA4D210067DACE /* Ascentspark_AssignmentApp.swift in Sources */,
+				C3285D6826ECA5060067DACE /* FollowersView.swift in Sources */,
+				C3285D6A26ED91380067DACE /* AssestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
